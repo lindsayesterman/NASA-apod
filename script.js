@@ -18,13 +18,11 @@ function displayResults(responseJson) {
 
 $('input[type=text]').val("");
 
-$('li > div').replaceWith(
+$('ul > .flex-container > li > div').replaceWith(
       `<ul>
-      <li><div class="imgAppended"><img src="${responseJson.hdurl}"></div></li>
-      </ul>`
+      <li><div class="imgAppended"><a href="template.html"><img src="${responseJson.hdurl}"></a></div></li>
+    </ul>`
     );
-  //display the results section  
-  //$('#results').removeClass('hidden');
 };
 
 
@@ -63,29 +61,3 @@ function watchForm() {
 
 $(watchForm);
 
-
-/*
-function displayResults(responseJson) {
-  // if there are previous results, remove them
-  console.log(responseJson);
-  $('#results-list').empty();
-  // iterate through the data array
-    // for each object in the data
-    //array, add a list item to the results 
-    //list with the NP full name, description,
-    //and URL
-
-//$(".flex-container").css("background-color", "yellow");
-
-
-    $('#results-list').append(
-
-      `<div class="container"><ul><li><h3>${responseJson.title}</h3></li>
-      <li><img src="${responseJson.hdurl}"></li>
-      <li><p>${responseJson.explanation}</p></li>
-      </ul></div>`
-    );
-  //display the results section  
-  $('#results').removeClass('hidden');
-};
-*/

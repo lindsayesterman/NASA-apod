@@ -43,7 +43,6 @@ li{
   justify-content: center;
   margin-right:5%;
   margin-left:5%;
-  object-fit: cover
 }
 
 
@@ -55,6 +54,7 @@ ul > .flex-container > li > div {
   border: 1px solid black;
   padding:3%;
   position: relative;
+
 }
 
 
@@ -81,10 +81,60 @@ ul > .flex-container > li > div {
   font-size: 28px
 }
 
-ul > li > .imgAppended > img{
+ul > li > .imgAppended > a > img{
    height:280px;
    width:400px;
    padding:3%;
+}
+
+ul > li > .imgAppended > a:hover img{
+ height:320px;
+ width:430px;
+}
+
+
+/* Media queries*/
+@media only screen and (max-width:1000px){
+
+  ul > .flex-container > li > div {
+  height: 260px;
+  width:370px;
+}
+
+.box1{
+  font-size:15px;
+}
+
+.box2{
+  font-size:15px;
+  line-height:38px;
+}
+.box3{
+  line-height: 14px;
+}
+
+
+}
+
+@media only screen and (max-width:600px){
+
+  ul > .flex-container > li > div {
+  height: 230px;
+  width:330px;
+}
+
+.box1{
+  font-size:14px;
+}
+
+.box2{
+  font-size:15px;
+  line-height:36px;
+}
+.box3{
+  line-height: 13px;
+}
+
 }
 
 
