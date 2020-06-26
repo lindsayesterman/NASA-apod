@@ -82,14 +82,15 @@ ul > .flex-container > li > div {
 }
 
 ul > li > .imgAppended > a > img{
-   height:280px;
-   width:400px;
-   padding:3%;
+ height:280px;
+ width:400px;
+ padding:3%;
+ margin:10px;
+ transition: transform .15s; 
 }
 
 ul > li > .imgAppended > a:hover img{
- height:320px;
- width:430px;
+  transform: scale(1.2);
 }
 
 
@@ -97,43 +98,42 @@ ul > li > .imgAppended > a:hover img{
 @media only screen and (max-width:1000px){
 
   ul > .flex-container > li > div {
-  height: 260px;
-  width:370px;
-}
+    height: 260px;
+    width:370px;
+  }
 
-.box1{
-  font-size:15px;
-}
+  .box1{
+    font-size:15px;
+  }
 
-.box2{
-  font-size:15px;
-  line-height:38px;
-}
-.box3{
-  line-height: 14px;
-}
-
+  .box2{
+    font-size:15px;
+    line-height:38px;
+  }
+  .box3{
+    line-height: 14px;
+  }
 
 }
 
 @media only screen and (max-width:600px){
 
   ul > .flex-container > li > div {
-  height: 230px;
-  width:330px;
-}
+    height: 230px;
+    width:330px;
+  }
 
-.box1{
-  font-size:14px;
-}
+  .box1{
+    font-size:14px;
+  }
 
-.box2{
-  font-size:15px;
-  line-height:36px;
-}
-.box3{
-  line-height: 13px;
-}
+  .box2{
+    font-size:15px;
+    line-height:36px;
+  }
+  .box3{
+    line-height: 13px;
+  }
 
 }
 

@@ -17,7 +17,6 @@ function displayResults(responseJson) {
   console.log(responseJson);
 
 $('input[type=text]').val("");
-
 $('ul > .flex-container > li > div').replaceWith(
       `<ul>
       <li><div class="imgAppended"><a href="template.html"><img src="${responseJson.hdurl}"></a></div></li>
@@ -35,9 +34,7 @@ function getAPOD(query) {
 
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
-
   console.log(url);
-
   fetch(url)
     .then(response => {
       if (response.ok) {
