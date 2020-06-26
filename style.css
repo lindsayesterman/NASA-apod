@@ -21,7 +21,7 @@ button:hover {
 }
 
 .error-message {
-    color: red;
+  color: red;
 }
 
 .hidden {
@@ -35,6 +35,60 @@ li{
 .container ul li img{
   width:100%;
 }
+
+.flex-container{
+  margin-top:5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right:5%;
+  margin-left:5%;
+  object-fit: cover
+}
+
+
+ul > .flex-container > li > div {
+  background-color: white;
+  height: 280px;
+  width:400px;
+  margin: 10px;
+  border: 1px solid black;
+  padding:3%;
+  position: relative;
+}
+
+
+.box1{
+  text-align:center;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.box2{
+  text-align:right;
+  line-height: 43px;
+  font-size: 19px;
+}
+
+.box3{
+  text-align:left;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.box4{
+  text-align:center;
+  font-size: 28px
+}
+
+ul > li > .imgAppended > img{
+   height:280px;
+   width:400px;
+   padding:3%;
+}
+
+
+
 
 
 
