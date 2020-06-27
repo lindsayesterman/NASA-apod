@@ -14,32 +14,27 @@ function formatQueryParams(params) {
 }
 
 function displayResults(responseJson) {
-  console.log(responseJson);
-  if (clickCount<2){
-    $('ul > .flex-container > li > div').replaceWith(
-      `<ul>
-      <li><div class="imgAppended"><a href="template.html"><img src="${responseJson.hdurl}"></a></div></li>
-      </ul>`
-      )}else{
-     $('ul > li > .imgAppended > a > img').replaceWith(
-      `<ul>
-      <li><div class="imgAppended"><a href="template.html"><img src="${responseJson.hdurl}"></a></div></li>
-      </ul>`
-      );
-   }
-   $('input[type=text]').val("");
-   //showImage();
- };
+  console.log(responseJson); 
 
-/*
- function showImage(){
+    $('.box1, .box2, .box3, .box4').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
+
+      $('input[type=text]').val("");
+
+};
+
+
+
+
+
+
+function showImage(){
   $('ul > li > .imgAppended > a > img').click(function(){
     $(this).show("fast");
   })};
-*/
+
 
   function setText(element){
-  document.getElementById("content").innerHTML = element.value;
+    document.getElementById("content").innerHTML = element.value;
   }
 
 
