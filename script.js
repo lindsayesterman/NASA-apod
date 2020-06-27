@@ -16,9 +16,9 @@ function formatQueryParams(params) {
 function displayResults(responseJson) {
   console.log(responseJson); 
 
-    $('.box1, .box2, .box3, .box4').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
-
-      $('input[type=text]').val("");
+  $('.box1, .box2, .box3, .box4').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
+  $('.results').removeClass('hidden');
+  $('input[type=text]').val("");
 
 };
 
