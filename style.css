@@ -50,13 +50,12 @@ ul > .flex-container > li > div {
   background-color: white;
   height: 280px;
   width:400px;
-  margin: 10px;
+  margin: 13px;
   border: 1px solid black;
   padding:3%;
-  position: relative;
+
 
 }
-
 
 .box1{
   text-align:center;
@@ -82,16 +81,31 @@ ul > .flex-container > li > div {
 }
 
 ul > li > .imgAppended > a > img{
- height:280px;
- width:400px;
- padding:3%;
- margin:10px;
- transition: transform .15s; 
+  height:280px;
+  width:400px;
+  padding:3%;
+  margin:13px;
+  border: 1px solid black;
+  padding:3%;
+  transition: transform .15s; 
+
 }
 
 ul > li > .imgAppended > a:hover img{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+
+
+textarea{
+  height:250px;
+  width:90%;
+  margin:3%;
+}
+
+.send-to{
+  margin:2%;
+}
+
 
 
 /* Media queries*/
