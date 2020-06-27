@@ -106,6 +106,13 @@ textarea{
   margin:2%;
 }
 
+div p{
+  position:absolute;
+  right: 50%; 
+  top: 20%; 
+  color:white;
+  text-align:center;
+}
 
 
 /* Media queries*/

@@ -28,14 +28,19 @@ function displayResults(responseJson) {
       );
    }
    $('input[type=text]').val("");
-   showImage();
+   //showImage();
  };
 
-
+/*
  function showImage(){
   $('ul > li > .imgAppended > a > img').click(function(){
-    $(this).show("slow");
+    $(this).show("fast");
   })};
+*/
+
+  function setText(element){
+  document.getElementById("content").innerHTML = element.value;
+  }
 
 
 
