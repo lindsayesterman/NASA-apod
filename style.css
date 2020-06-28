@@ -56,9 +56,9 @@ li a div{
   text-decoration: none;
 }
 
-  a{
-    text-decoration: none;
-  }
+a{
+  text-decoration: none;
+}
 
 .box1 {
   text-align:center;
@@ -91,6 +91,8 @@ textarea{
   height:250px;
   width:90%;
   margin:3%;
+  font-size:20px;
+  font-family: roboto;
 }
 
 .send-to{
@@ -113,6 +115,16 @@ img{
   height:50%;
 }
 
+.dropdown{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  margin:15px;
+}
+
+select {
+  margin:10px;
+}
 
 /* Media queries*/
 @media only screen and (max-width:1000px){

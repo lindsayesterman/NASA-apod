@@ -22,21 +22,9 @@ function displayResults(responseJson) {
 
 };
 
-
-
-
-
-
-function showImage(){
-  $('ul > li > .imgAppended > a > img').click(function(){
-    $(this).show("fast");
-  })};
-
-
   function setText(element){
     document.getElementById("content").innerHTML = element.value;
   }
-
 
 
   function getAPOD(query) {
