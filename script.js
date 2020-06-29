@@ -19,6 +19,8 @@ function displayResults(responseJson) {
   $('.box').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
   $('.results').removeClass('hidden');
   $('input[type=text]').val("");
+  $("body").css('background-image', 'none');
+  $('h1,label').css("color", "black");
 };
 
 
