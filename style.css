@@ -44,6 +44,9 @@ li{
   justify-content: center;
   margin-right:5%;
   margin-left:5%;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .box{
@@ -76,12 +79,6 @@ textarea{
 
 .send-to{
   margin:2%;
-}
-
-.relative{
-  position: relative;
-  text-align: center;
-  color: white;
 }
 
 p#content{

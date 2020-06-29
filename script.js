@@ -56,6 +56,7 @@ function removePage(){
   $('.removePage').addClass('hidden');
   $('.newPage').removeClass('hidden');
   $('h5').addClass('hidden');
+  $('p#content').removeClass('hidden');
   $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
 };
 
