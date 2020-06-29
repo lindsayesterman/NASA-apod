@@ -55,11 +55,13 @@ function getAPOD(query) {
 function removePage(){
   $('.removePage').addClass('hidden');
   $('.newPage').removeClass('hidden');
+  $('h5').addClass('hidden');
+  $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
 };
 
 function theNewPage(){
   $('li div').click(function(){
-  removePage();
+    removePage();
   })};
 
 
@@ -95,20 +97,20 @@ $('p#content').removeClass('center')
 
 
 
-  function watchForm() {
-    $('form').submit(event => {
-      event.preventDefault();
-      const searchDate = $('#js-search-date').val();
-      getAPOD(searchDate);
-      clickCount++;
-      theNewPage();
-      addStylingToText();
-    });
-  }
+function watchForm() {
+  $('form').submit(event => {
+    event.preventDefault();
+    const searchDate = $('#js-search-date').val();
+    getAPOD(searchDate);
+    clickCount++;
+    theNewPage();
+    addStylingToText();
+  });
+}
 
 
 
-  $(watchForm);
+$(watchForm);
 
 
 
