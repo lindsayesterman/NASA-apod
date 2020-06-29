@@ -32,10 +32,6 @@ li{
   list-style: none;
 }
 
-.container ul li img{
-  width:100%;
-}
-
 .flex-container{
   margin-top:5%;
   display: flex;
@@ -45,7 +41,7 @@ li{
   margin-left:5%;
 }
 
-li a div{
+li div{
   background-color: white;
   height: 280px;
   width:400px;
@@ -53,10 +49,6 @@ li a div{
   border: 1px solid black;
   padding:3%;
   color:black;
-  text-decoration: none;
-}
-
-a{
   text-decoration: none;
 }
 
@@ -83,7 +75,7 @@ a{
   font-size: 28px
 }
 
-.flex-container > li> a:hover > div{
+.flex-container > li:hover > div{
   transform: scale(1.1);
 }
 

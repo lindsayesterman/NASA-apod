@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<div class="removePage">
 	<div class="container">
 
 
@@ -37,21 +37,76 @@
 
 	</div>
 
-
 	<ul>
 		<div class="flex-container">
 
-			<li><a href="template.html"><div class="box1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br> Donec risus ipsum, pulvinar non gravida vitae, auctor nec lorem. Integer tincidunt vitae dui at dictum.</div></a></li>
+			<li><div class="box1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br> Donec risus ipsum, pulvinar non gravida vitae, auctor nec lorem. Integer tincidunt vitae dui at dictum.</div></li>
 
-			<li><a href="template.html"><div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br><br> Donec risus ipsum, pulvinar non gravida.</div></a></li>
+			<li><div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br><br> Donec risus ipsum, pulvinar non gravida.</div></li>
 
-			<li><a href="template.html"><div class="box3">Donec in eros commodo, <br>porttitor leo sagittis, viverra est.<br> Donec aliquam tempor diam, <br>vehicula vestibulum justo <br>commodo sed.<br><br><br><br><br><br><br><br><br><br><br>Curabitur porta viverra tellus sit amet.</div> </a></li>
+			<li><div class="box3">Donec in eros commodo, <br>porttitor leo sagittis, viverra est.<br> Donec aliquam tempor diam, <br>vehicula vestibulum justo <br>commodo sed.<br><br><br><br><br><br><br><br><br><br><br>Curabitur porta viverra tellus sit amet.</div></li>
 
-			<li><a href="template.html"><div class="box4">Lorem Ipsum</div></a></li>
+			<li><div class="box4">Lorem Ipsum</div></li>
 
 		</div>
 	</ul>
+</div>
 
+<div class="newPage hidden">
+
+  <img src="https://images.wallpaperscraft.com/image/milky_way_starry_sky_stars_128523_300x168.jpg" width="100%" height="250px">
+
+
+
+  <div>
+    <p id="content"></p>
+  </div>
+
+
+<div class="dropdown">
+  <select id = "fonts">
+    <option value="Fonts">Fonts</option>
+    <option value = "arial">Arial</option>
+    <option value = "courier">Courier</option>
+    <option value = "roboto">Roboto</option>
+    <option value = "Times New Roman">Times New Roman</option>
+  </select>
+
+  <select id = "size">
+    <option value="Size">Size</option>
+    <option value = "10">10</option>
+    <option value = "15">15</option>
+    <option value = "20">20</option>
+    <option value = "25">25</option>
+  </select>
+
+   <select id = "color">
+    <option value="color">Color</option>
+    <option value = "blue">Blue</option>
+    <option value = "red">Red</option>
+    <option value = "white">White</option>
+    <option value = "black">Black</option>
+  </select>
+
+  <select id = "align">
+    <option value="center">Center</option>
+    <option value = "left">Left</option>
+    <option value = "right">Right</option>
+  </select>
+</div>
+
+
+  <form id="userContent">
+
+    <textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)"></textarea>
+
+  </form>
+
+  <div class="send-to">
+    <a href="mailto:name@email.com">Send</a>
+  </div>
+
+</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
