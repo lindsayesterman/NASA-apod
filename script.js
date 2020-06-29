@@ -19,44 +19,60 @@ function displayResults(responseJson) {
   $('.box1, .box2, .box3, .box4').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
   $('.results').removeClass('hidden');
   $('input[type=text]').val("");
-
+  $('textarea').append(
+    `<img src="${responseJson.hdurl}">
+    `)
 };
 
-  function setText(element){
-    document.getElementById("content").innerHTML = element.value;
-  }
+function setText(element){
+  document.getElementById("content").innerHTML = element.value;
+}
 
 
-  function getAPOD(query) {
-    const params = {
-      api_key: apiKey,
-      date: query,
-    };
+function addStylingToText(){
+  $("#fonts").change(function() {
+    $('div p, textarea').css("font-family", $(this).val());
+  });
+  $("#size").change(function() {
+    $('div p, textarea').css("font-size", $(this).val() + "px");
+  });
+  $("#color").change(function(){
+    $('div p, textarea').css("color", $(this).val());
+  });
+}
 
-    const queryString = formatQueryParams(params)
-    const url = searchURL + '?' + queryString;
-    console.log(url);
-    fetch(url)
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(response.statusText);
-    })
-    .then(responseJson => displayResults(responseJson))
-    .catch(err => {
-      $('#js-error-message').text(`Something went wrong: ${err.message}`);
-    });
-  }
+addStylingToText();
 
-  function watchForm() {
-    $('form').submit(event => {
-      event.preventDefault();
-      const searchDate = $('#js-search-date').val();
-      getAPOD(searchDate);
-      clickCount++;
-    });
-  }
+function getAPOD(query) {
+  const params = {
+    api_key: apiKey,
+    date: query,
+  };
 
-  $(watchForm);
+  const queryString = formatQueryParams(params)
+  const url = searchURL + '?' + queryString;
+  console.log(url);
+  fetch(url)
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error(response.statusText);
+  })
+  .then(responseJson => displayResults(responseJson))
+  .catch(err => {
+    $('#js-error-message').text(`Something went wrong: ${err.message}`);
+  });
+}
+
+function watchForm() {
+  $('form').submit(event => {
+    event.preventDefault();
+    const searchDate = $('#js-search-date').val();
+    getAPOD(searchDate);
+    clickCount++;
+  });
+}
+
+$(watchForm);
 
