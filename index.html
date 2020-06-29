@@ -37,31 +37,34 @@
 
 		</div>
 
-			<div class="flex-container">
+		<div class="flex-container">
 
-				<li><div class="box hidden">Click here to design your own card!</div></li>
+			<li><div class="box hidden">Click here to design your own card!</div></li>
 
-			</div>
+		</div>
 	</div>
+
 
 	<div class="newPage hidden">
 
-		<img src="https://images.wallpaperscraft.com/image/milky_way_starry_sky_stars_128523_300x168.jpg" width="100%" height="250px">
-
-
-		<div>
+		<div class="relative">
+			<img class="image-text" src="https://images.wallpaperscraft.com/image/milky_way_starry_sky_stars_128523_300x168.jpg" width="450px" height="320px">
 			<p id="content"></p>
 		</div>
 
-<div class="here">
-</div>
+
+
 		<div class="dropdown">
 			<select id = "fonts">
 				<option value="Fonts">Fonts</option>
 				<option value = "arial">Arial</option>
+				<option value="comic sans ms">Comic Sans MS</option>
 				<option value = "courier">Courier</option>
-				<option value = "roboto">Roboto</option>
-				<option value = "Times New Roman">Times New Roman</option>
+				<option value = "georgia">Georgia</option>
+				<option value = "verdana">Verdana</option>
+				<option value ="tahoma">Tahoma</option>
+				<option value = "times new roman">Times New Roman</option>
+
 			</select>
 
 			<select id = "size">
@@ -96,7 +99,7 @@
 			</select>
 		</div>
 
-<h3>Enter content here:</h4>
+		<h3>Enter content here:</h3>
 		<form id="userContent">
 
 			<textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)"></textarea>
