@@ -5,15 +5,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  /*background-image: url('https://www.geeksundergrace.com/wp-content/uploads/2016/06/space.jpg');
-  background-repeat": no-repeat;
-  background-position:center, 
-  background-size: cover;
-  opacity:.17;*/
+  /*
   background-image: url('https://www.geeksundergrace.com/wp-content/uploads/2016/06/space.jpg');
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 button, input[type="text"] {
@@ -95,10 +91,12 @@ p#content{
   transform: translate(-50%, -50%);
 }
 
+
+/*
 h1, label{
   color:white;
 }
-
+*/
 
 
 .bottom-left {
