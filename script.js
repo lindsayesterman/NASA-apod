@@ -15,11 +15,12 @@ function formatQueryParams(params) {
 
 function displayResults(responseJson) {
   console.log(responseJson); 
-
-  $('.box1, .box2, .box3, .box4').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
+  $('.box').removeClass('hidden')
+  $('.box').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
   $('.results').removeClass('hidden');
   $('input[type=text]').val("");
 };
+
 
 function setText(element){
   document.getElementById("content").innerHTML = element.value;
@@ -49,45 +50,48 @@ function getAPOD(query) {
 }
 
 
-  function removePage(){
-    $('.removePage').addClass('hidden');
-    $('.newPage').removeClass('hidden');
+function removePage(){
+  $('.removePage').addClass('hidden');
+  $('.newPage').removeClass('hidden');
+};
+
+function theNewPage(){
+  $('li div').click(function(){
+  removePage();
+  })};
+
+
+
+  function addStylingToText(){
+    $("#fonts").change(function() {
+      $('div p, textarea').css("font-family", $(this).val());
+    });
+    $("#size").change(function() {
+      $('div p, textarea').css("font-size", $(this).val() + "px");
+    });
+    $("#color").change(function(){
+      $('div p, textarea').css("color", $(this).val());
+    });
+    $("#align").change(function(){
+      $('div p, textarea').css("text-align", $(this).val());
+    });
   };
 
-  function theNewPage(){
-    $('li div').click(function(){
-      removePage();
-    })};
+
+  function watchForm() {
+    $('form').submit(event => {
+      event.preventDefault();
+      const searchDate = $('#js-search-date').val();
+      getAPOD(searchDate);
+      clickCount++;
+      theNewPage();
+      addStylingToText();
+    });
+  }
 
 
 
-function addStylingToText(){
-  $("#fonts").change(function() {
-    $('div p, textarea').css("font-family", $(this).val());
-  });
-  $("#size").change(function() {
-    $('div p, textarea').css("font-size", $(this).val() + "px");
-  });
-  $("#color").change(function(){
-    $('div p, textarea').css("color", $(this).val());
-  });
-  };
-
-
-    function watchForm() {
-      $('form').submit(event => {
-        event.preventDefault();
-        const searchDate = $('#js-search-date').val();
-        getAPOD(searchDate);
-        clickCount++;
-        theNewPage();
-        addStylingToText();
-      });
-    }
-
-
-
-$(watchForm);
+  $(watchForm);
 
 
 

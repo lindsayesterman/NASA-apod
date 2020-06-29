@@ -5,6 +5,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  /*background-image: url('https://www.geeksundergrace.com/wp-content/uploads/2016/06/space.jpg');
+  background-repeat": no-repeat;
+  background-position:center, 
+  background-size: cover;
+  opacity:.17;*/
 }
 
 button, input[type="text"] {
@@ -41,38 +46,17 @@ li{
   margin-left:5%;
 }
 
-li div{
+.box{
+  text-align:center;
+  font-size: 23px;
   background-color: white;
-  height: 280px;
-  width:400px;
-  margin: 13px;
+  height: 330px;
+  width:440px;
+  margin: 5%;
   border: 1px solid black;
   padding:3%;
   color:black;
   text-decoration: none;
-}
-
-.box1 {
-  text-align:center;
-  line-height: 25px;
-  font-size: 17px;
-}
-
-.box2{
-  text-align:right;
-  line-height: 43px;
-  font-size: 19px;
-}
-
-.box3{
-  text-align:left;
-  line-height: 15px;
-  font-size: 14px;
-}
-
-.box4{
-  text-align:center;
-  font-size: 28px
 }
 
 .flex-container > li:hover > div{
@@ -118,47 +102,34 @@ select {
   margin:10px;
 }
 
+h3{
+  margin:28px;
+  font-family:Helvetica;
+}
+
+h2{
+  margin-top:20px;
+}
+
+
 /* Media queries*/
 @media only screen and (max-width:1000px){
 
-  ul > .flex-container > li > div {
-    height: 260px;
-    width:370px;
-  }
-
-  .box1{
-    font-size:15px;
-  }
-
-  .box2{
-    font-size:15px;
-    line-height:38px;
-  }
-  .box3{
-    line-height: 14px;
+  .box {
+    height: 300px;
+    width:400px;
+    font-size:20px;
   }
 
 }
 
 @media only screen and (max-width:600px){
 
-  ul > .flex-container > li > div {
-    height: 230px;
-    width:330px;
+  .box{
+    height: 270px;
+    width:380px;
+    font-size:18px;
   }
-
-  .box1{
-    font-size:14px;
-  }
-
-  .box2{
-    font-size:15px;
-    line-height:36px;
-  }
-  .box3{
-    line-height: 13px;
-  }
-
 }
 
 

@@ -13,100 +13,101 @@
 </head>
 
 <body>
-<div class="removePage">
-	<div class="container">
+	<div class="removePage">
+		<div class="container">
 
 
-		<h1>Nasa postcards APOD</h1>
+			<h1>Nasa postcards APOD</h1>
 
-		<form id="js-form">
-			<label for="search-date">Enter a date (YYYY-MM-DD):</label>
-			<input type="text" name="search-date" id="js-search-date" required><br>
-
-
-			<input type="submit" value="Go!">
-		</form>
+			<form id="js-form">
+				<label for="search-date">Enter a date (YYYY-MM-DD):</label>
+				<input type="text" name="search-date" id="js-search-date" required><br>
 
 
-
-		<p id="js-error-message" class="error-message"></p>
-		<section id="results" class="results hidden">
-			<h2>Choose a template:</h2>
-		</section>
+				<input type="submit" value="Go!">
+			</form>
 
 
-	</div>
 
-	<ul>
-		<div class="flex-container">
+			<p id="js-error-message" class="error-message"></p>
+			<section id="results" class="results hidden">
+				<h2>This is the Astronomy Picture of that day:</h2>
+			</section>
 
-			<li><div class="box1"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br> Donec risus ipsum, pulvinar non gravida vitae, auctor nec lorem. Integer tincidunt vitae dui at dictum.</div></li>
-
-			<li><div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><br><br> Donec risus ipsum, pulvinar non gravida.</div></li>
-
-			<li><div class="box3">Donec in eros commodo, <br>porttitor leo sagittis, viverra est.<br> Donec aliquam tempor diam, <br>vehicula vestibulum justo <br>commodo sed.<br><br><br><br><br><br><br><br><br><br><br>Curabitur porta viverra tellus sit amet.</div></li>
-
-			<li><div class="box4">Lorem Ipsum</div></li>
 
 		</div>
-	</ul>
+
+			<div class="flex-container">
+
+				<li><div class="box hidden">Click here to design your own card!</div></li>
+
+			</div>
+	</div>
+
+	<div class="newPage hidden">
+
+		<img src="https://images.wallpaperscraft.com/image/milky_way_starry_sky_stars_128523_300x168.jpg" width="100%" height="250px">
+
+
+		<div>
+			<p id="content"></p>
+		</div>
+
+<div class="here">
 </div>
+		<div class="dropdown">
+			<select id = "fonts">
+				<option value="Fonts">Fonts</option>
+				<option value = "arial">Arial</option>
+				<option value = "courier">Courier</option>
+				<option value = "roboto">Roboto</option>
+				<option value = "Times New Roman">Times New Roman</option>
+			</select>
 
-<div class="newPage hidden">
+			<select id = "size">
+				<option value="Size">Size</option>
+				<option value = "10">10</option>
+				<option value = "13">13</option>
+				<option value = "15">15</option>
+				<option value = "17">17</option>
+				<option value = "20">20</option>
+				<option value = "25">25</option>
+				<option value = "30">30</option>
+			</select>
 
-  <img src="https://images.wallpaperscraft.com/image/milky_way_starry_sky_stars_128523_300x168.jpg" width="100%" height="250px">
+			<select id = "color">
+				<option value="color">Color</option>
+				<option value = "black">Black</option>
+				<option value = "white">White</option>
+				<option value = "gray">Gray</option>
+				<option value = "red">Red</option>
+				<option value = "orange">Orange</option>
+				<option value = "yellow">Yellow</option>
+				<option value = "green">Green</option>
+				<option value = "blue">Blue</option>
+				<option value = "purple">Purple</option>
+			</select>
 
+			<select id = "align">
+				<option value="align">Align</option>
+				<option value="center">Center</option>
+				<option value = "left">Left</option>
+				<option value = "right">Right</option>
+			</select>
+		</div>
 
+<h3>Enter content here:</h4>
+		<form id="userContent">
 
-  <div>
-    <p id="content"></p>
-  </div>
+			<textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)"></textarea>
 
+		</form>
 
-<div class="dropdown">
-  <select id = "fonts">
-    <option value="Fonts">Fonts</option>
-    <option value = "arial">Arial</option>
-    <option value = "courier">Courier</option>
-    <option value = "roboto">Roboto</option>
-    <option value = "Times New Roman">Times New Roman</option>
-  </select>
+		<div class="send-to">
+			<a href="mailto:name@email.com">Send</a>
+		</div>
 
-  <select id = "size">
-    <option value="Size">Size</option>
-    <option value = "10">10</option>
-    <option value = "15">15</option>
-    <option value = "20">20</option>
-    <option value = "25">25</option>
-  </select>
-
-   <select id = "color">
-    <option value="color">Color</option>
-    <option value = "blue">Blue</option>
-    <option value = "red">Red</option>
-    <option value = "white">White</option>
-    <option value = "black">Black</option>
-  </select>
-
-  <select id = "align">
-    <option value="center">Center</option>
-    <option value = "left">Left</option>
-    <option value = "right">Right</option>
-  </select>
-</div>
-
-
-  <form id="userContent">
-
-    <textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)"></textarea>
-
-  </form>
-
-  <div class="send-to">
-    <a href="mailto:name@email.com">Send</a>
-  </div>
-
-</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
