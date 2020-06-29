@@ -61,21 +61,36 @@ function theNewPage(){
   })};
 
 
-
   function addStylingToText(){
     $("#fonts").change(function() {
-      $('div p, textarea').css("font-family", $(this).val());
+      $('p#content, textarea').css("font-family", $(this).val());
     });
     $("#size").change(function() {
-      $('div p, textarea').css("font-size", $(this).val() + "px");
+      $('p#content, textarea').css("font-size", $(this).val() + "px");
     });
     $("#color").change(function(){
-      $('div p, textarea').css("color", $(this).val());
-    });
-    $("#align").change(function(){
-      $('div p, textarea').css("text-align", $(this).val());
+      $('p#content, textarea').css("color", $(this).val());
     });
   };
+
+/*
+$('p#content').removeClass('center')
+     $('p#content').addClass($(this).val())
+     $('p#content').removeClass($(this).val())
+   
+   let previous = center;
+       if ($(this).val('bottom-right')){
+       $('p#content').removeClass(previous);
+        previous = $(this).val();
+      $('p#content').addClass('previous');
+
+
+        $("#align").change(function(){
+      if ($(this).val('bottom-right')){
+      $('p#content').css({"bottom":"8px", "right":"16px"});
+}})
+*/
+
 
 
   function watchForm() {
