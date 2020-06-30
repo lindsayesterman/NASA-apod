@@ -55,10 +55,10 @@ function getAPOD(query) {
 }
 
 
-function removePage(){
+function removePage(responseJson){
   $('.removePage, h5').addClass('hidden');
   $('.newPage, p#content').removeClass('hidden');
-  $('p.explanation').remove();
+  $('p.explanation').addClass('hidden');
   $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
 };
 
@@ -66,12 +66,28 @@ function resizePic(){
 $('.box').css({"width":"700px", "height":"450px"})
 }
 
+function sendBtn(){
+  let sendBtn=$(`
+  <div class="send-to">
+    <a href="mailto:name@email.com">Send</a>
+  </div>`);
+  return sendBtn
+}
+
+function sendPage(){
+  $('button').click(function(){
+  $('#userContent').append(
+    sendBtn()
+    );
+  $('select, textarea, button').addClass('hidden')
+    })}
 
 
 function theNewPage(){
   $('.box').click(function(){
     removePage();
     resizePic();
+    sendPage();
   })};
 
 

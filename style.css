@@ -77,10 +77,6 @@ textarea{
   margin-right: auto;
 }
 
-.send-to{
-  margin:2%;
-}
-
 p#content{
   position: absolute;
   top: 50%;
@@ -103,8 +99,6 @@ p#content{
 h1, label{
   color:white;
 }
-
-
 
 .bottom-left {
   position: absolute;
@@ -139,6 +133,15 @@ h1, label{
   flex-direction: row;
   justify-content:center;
   margin:10px;
+  display:inline-block;
+}
+
+button{
+  display:inline-block;
+}
+
+.send-to{
+  margin:2%;
 }
 
 select {
