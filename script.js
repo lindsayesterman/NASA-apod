@@ -66,18 +66,20 @@ function resizePic(){
 $('.box').css({"width":"700px", "height":"450px"})
 }
 
-function sendBtn(){
-  let sendBtn=$(`
+function sendString(){
+  let send=$(`
   <div class="send-to">
-    <a href="mailto:name@email.com">Send</a>
+  <h4>Take a screenshot of the postcard and send it!</h4>
+  <p>Mac - Command + shift + 4</p>
+  <p>Windows - Alt + PrtScn</p> <a href="mailto:name@email.com">Send</a>
   </div>`);
-  return sendBtn
+  return send
 }
 
 function sendPage(){
   $('button').click(function(){
-  $('#userContent').append(
-    sendBtn()
+  $('.send-here').append(
+    sendString()
     );
   $('select, textarea, button').addClass('hidden')
     })}
