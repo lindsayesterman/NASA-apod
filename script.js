@@ -15,10 +15,13 @@ function formatQueryParams(params) {
 
 function displayResults(responseJson) {
   console.log(responseJson); 
-  $('.box').removeClass('hidden')
+  $('.box').removeClass('hidden');
+  $('.explanation').removeClass('hidden');
   $('.box').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
-  $('.results').removeClass('hidden');
+  $('.explanation').append(
+    `${responseJson.explanation}`);
   $('input[type=text]').val("");
+  $('.results').removeClass('hidden');
   //$("body").css('background-image', 'none');
   //$('h1,label').css("color", "black");
 };
@@ -53,16 +56,22 @@ function getAPOD(query) {
 
 
 function removePage(){
-  $('.removePage').addClass('hidden');
-  $('.newPage').removeClass('hidden');
-  $('h5').addClass('hidden');
-  $('p#content').removeClass('hidden');
+  $('.removePage, h5').addClass('hidden');
+  $('.newPage, p#content').removeClass('hidden');
+  $('p.explanation').remove();
   $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
 };
 
+function resizePic(){
+$('.box').css({"width":"700px", "height":"450px"})
+}
+
+
+
 function theNewPage(){
-  $('li div').click(function(){
+  $('.box').click(function(){
     removePage();
+    resizePic();
   })};
 
 
