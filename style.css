@@ -38,6 +38,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position:relative;
   margin-right:5%;
   margin-left:5%;
   text-align: center;
@@ -68,7 +69,7 @@ textarea{
 }
 
 p#content{
-  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -88,6 +89,7 @@ h1{
   text-align:center;
   color:white;
   font-size:34px;
+  margin-top:35px;
 }
 
 label{
@@ -95,7 +97,6 @@ label{
   color:white;
   font-weight: bold;
   font-size:20px;
-  display:inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -133,7 +134,11 @@ input[type=submit]{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /*
+
+CSS FOR WHEN WANTING TO ADD AN OPTION TO ALIGN 
+ITEMS A CERTAIN WAY
 
 .bottom-left {
   position: absolute;
@@ -167,7 +172,7 @@ input[type=submit]{
   display:flex;
   flex-direction: row;
   justify-content:center;
-  margin:10px;
+  margin:8px;
   text-align:center;
 }
 
@@ -226,18 +231,21 @@ h2{
 }
 
 
-@media only screen and (max-width:448px){
-
+@media only screen and (max-width:449px){
 
   .box{
     height: 250px;
-    width:340px;
+    width:360px;
     font-size:18px;
   }
 
   p.explanation{
     font-size:13px;
-    width:100%;
+    width:95%;
+  }
+
+  textarea{
+    width:80%;
   }
 
 }

@@ -85,7 +85,7 @@ function sendPage(){
     })}
 
 
-function theNewPage(){
+function seePicPage(){
   $('.box').click(function(){
     removePage();
     resizePic();
@@ -131,7 +131,7 @@ function watchForm() {
     const searchDate = $('#js-search-date').val();
     getAPOD(searchDate);
     clickCount++;
-    theNewPage();
+    seePicPage();
     addStylingToText();
   });
 }
