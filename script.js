@@ -21,9 +21,10 @@ function displayResults(responseJson) {
   $('.explanation').append(
     `${responseJson.explanation}`);
   $('input[type=text]').val("");
+    $("body").css('background-image', 'none');
   $('.results').removeClass('hidden');
-  //$("body").css('background-image', 'none');
-  //$('h1,label').css("color", "black");
+  $('label, input[type=text').addClass('hidden');
+  $('h1').css("color", "black");
 };
 
 
@@ -56,9 +57,8 @@ function getAPOD(query) {
 
 
 function removePage(responseJson){
-  $('.removePage, h5').addClass('hidden');
+  $('.removePage, h5, p.explanation').addClass('hidden');
   $('.newPage, p#content').removeClass('hidden');
-  $('p.explanation').addClass('hidden');
   $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
 };
 
