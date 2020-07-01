@@ -9,7 +9,6 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 
@@ -34,9 +33,6 @@ button:hover {
   display: none;
 }
 
-li{
-  list-style: none;
-}
 
 .flex-container{
   display: flex;
@@ -44,22 +40,19 @@ li{
   justify-content: center;
   margin-right:5%;
   margin-left:5%;
-  position: relative;
   text-align: center;
   color: white;
 }
 
 .box{
-  text-align:center;
   font-size: 23px;
-  background-color: white;
   height: 390px;
   width:530px;
   margin: 3%;
   padding:3%;
 }
 
-.flex-container > li:hover > div{
+.flex-container > div:hover  {
   transform: scale(1.1);
 }
 

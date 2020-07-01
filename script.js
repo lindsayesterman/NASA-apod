@@ -59,7 +59,7 @@ function getAPOD(query) {
 function removePage(responseJson){
   $('.removePage, h5, p.explanation').addClass('hidden');
   $('.newPage, p#content').removeClass('hidden');
-  $('.flex-container > li:hover > div').css('transform', "scale(1.0)");
+  $('.flex-container > div:hover').css('transform', "scale(1.0)");
 };
 
 function resizePic(){
