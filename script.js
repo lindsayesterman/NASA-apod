@@ -23,7 +23,7 @@ function displayResults(responseJson) {
   $('input[type=text]').val("");
     $("body").css('background-image', 'none');
   $('.results').removeClass('hidden');
-  $('label, input[type=text').addClass('hidden');
+  $('#js-form').addClass('hidden');
   $('h1').css("color", "black");
 };
 
@@ -73,7 +73,7 @@ function sendString(){
   <p>Mac - Command + shift + 4</p>
   <p>Windows - Alt + PrtScn</p> <a href="mailto:name@email.com">Send</a>
   </div>`);
-  return send
+  return send;
 }
 
 function sendPage(){
@@ -139,15 +139,6 @@ function watchForm() {
 
 
 $(watchForm);
-
-
-
-
-
-
-
-
-
 
 
 
