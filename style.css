@@ -11,6 +11,10 @@ body {
   background-attachment: fixed;
 }
 
+h3{
+  color:white;
+  text-align: center;
+}
 
 button, input[type="text"] {
   padding: 5px;
