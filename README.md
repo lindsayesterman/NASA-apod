@@ -1,7 +1,12 @@
 # NASA APOD DIGITAL POSTCARDS 
+
+
 **Enter a date and send a personalized, digital postcard to friends containing a NASA astronomy picture taken that day.**
 
+
 **The problem:**
+
+Live website - https://lindsayesterman.github.io/nasa-apod/
 
 1. 43% of people still send most of their mail on paper. This wastes paper, time, money, and is harmful towards the environment. We need to come up with innovative and fun communication technologies to help move these people in the direction of digital mail. 
 
