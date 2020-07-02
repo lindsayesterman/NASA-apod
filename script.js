@@ -15,15 +15,14 @@ function formatQueryParams(params) {
 
 function displayResults(responseJson) {
   console.log(responseJson); 
-  $('.box').removeClass('hidden');
-  $('.explanation').removeClass('hidden');
+  $('.box, .explanation').removeClass('hidden');
   $('.box').css({"background-image": "url("+responseJson.hdurl+")", "color": "white", "background-repeat": "no-repeat", "background-position":"center", "background-size": "cover"});
   $('.explanation').append(
     `${responseJson.explanation}`);
   $('input[type=text]').val("");
     $("body").css('background-image', 'none');
   $('.results').removeClass('hidden');
-  $('#js-form').addClass('hidden');
+  $('#js-form, #js-error-message').addClass('hidden');
   $('h1').css("color", "black");
 };
 
