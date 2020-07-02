@@ -1,5 +1,5 @@
 # NASA APOD DIGITAL POSTCARDS 
-## Enter a date and send a personalized, digital postcard to friends containing a NASA astronomy picture taken that day.
+**Enter a date and send a personalized, digital postcard to friends containing a NASA astronomy picture taken that day.**
 
 **The problem:**
 
@@ -21,5 +21,5 @@ Read a description about the picture if wanted:
 
 And design your own card!
 
-![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-design.png?raw=true)
+![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-personalized.png?raw=true)
 
