@@ -9,17 +9,22 @@
 
 3. It is your anniversary tomorrow, you totally forgot. Send your spouse a personal note with a picture taken of the stars the first day you met. Digital APOD postcards has got you!
 
+
 **The app:**
 
+
 Enter a special date:
+
 
 ![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-home.png?raw=true)
 
 Read a description about the picture if wanted:
 
+
 ![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-chosen.png?raw=true)
 
 And design your own card!
 
-![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-personalized.png?raw=true)
+
+![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-personalized.jpeg?raw=true)
 
