@@ -62,7 +62,7 @@ function removePage(responseJson){
 };
 
 function resizePic(){
-$('.box').css({"width":"700px", "height":"450px"})
+$('.box').css({"width":"700px", "height":"400px"})
 }
 
 function sendString(){
