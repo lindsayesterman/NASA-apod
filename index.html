@@ -65,7 +65,7 @@
 
 
 		<section class="dropdown">
-			<select id = "fonts">
+			<select id = "fonts" aria-label="enter font style">
 				<option value="Fonts">Fonts</option>
 				<option value = "arial">Arial</option>
 				<option value="comic sans ms">Comic Sans MS</option>
@@ -79,7 +79,7 @@
 
 			</select>
 
-			<select id = "size">
+			<select id = "size" aria-label="enter font size">
 				<option value="size">Size</option>
 				<option value = "10">10</option>
 				<option value = "13">13</option>
@@ -90,7 +90,7 @@
 				<option value = "30">30</option>
 			</select>
 
-			<select id = "color">
+			<select id = "color" aria-label="enter font color">
 				<option value="color">Color</option>
 				<option value = "black">Black</option>
 				<option value = "white">White</option>
@@ -110,7 +110,7 @@
 
 	<form id="userContent">
 
-		<textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)"></textarea>
+		<textarea name="content" form="userContent" placeholder="Enter content here..." onkeyup="setText(this)" aria-label="enter content here"></textarea>
 
 	</form>
 

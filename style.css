@@ -31,6 +31,7 @@ button:hover {
 
 .error-message {
   color: red;
+  text-align:center;
 }
 
 .hidden {
