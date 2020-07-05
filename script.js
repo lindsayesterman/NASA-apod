@@ -70,7 +70,9 @@ function sendString(){
   <div class="send-to">
   <h4>Take a screenshot of the postcard and send it!</h4>
   <p>Mac - Command + shift + 4</p>
-  <p>Windows - Alt + PrtScn</p> <a href="mailto:name@email.com">Send</a>
+  <p>Windows - Alt + PrtScn</p> 
+  <p>iphone - Press side and volume buttons, quickly release</p>
+  <a href="mailto:name@email.com">Send</a>
   </div>`);
   return send;
 }
@@ -102,25 +104,7 @@ function seePicPage(){
     $("#color").change(function(){
       $('p#content, textarea').css("color", $(this).val());
     });
-  };
-
-/*
-$('p#content').removeClass('center')
-     $('p#content').addClass($(this).val())
-     $('p#content').removeClass($(this).val())
-   
-   let previous = center;
-       if ($(this).val('bottom-right')){
-       $('p#content').removeClass(previous);
-        previous = $(this).val();
-      $('p#content').addClass('previous');
-
-
-        $("#align").change(function(){
-      if ($(this).val('bottom-right')){
-      $('p#content').css({"bottom":"8px", "right":"16px"});
-}})
-*/
+  }; 
 
 
 
