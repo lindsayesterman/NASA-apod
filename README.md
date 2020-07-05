@@ -35,3 +35,8 @@ And design your own card!
 
 ![alt text](https://github.com/lindsayesterman/nasa-apod/blob/master/nasa-personalized.jpeg?raw=true)
 
+
+**Technology Used:**
+
+
+HTML/CSS/JavaScript/jQuery
