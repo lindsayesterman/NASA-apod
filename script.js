@@ -107,7 +107,6 @@ function seePicPage(){
   }; 
 
 
-
 function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
